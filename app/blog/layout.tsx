@@ -1,29 +1,64 @@
 'use client'
-import { TextMorph } from '@/components/ui/text-morph'
 import { ScrollProgress } from '@/components/ui/scroll-progress'
+import { ArrowLeftIcon, CheckIcon, CopyIcon } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
-function CopyButton() {
-  const [text, setText] = useState('Copy')
-  const currentUrl = typeof window !== 'undefined' ? window.location.href : ''
+// Keep blog toolbar typography aligned with the main Header subtitle styling
+const TOOLBAR_BUTTON_CLASSNAME =
+  'inline-flex cursor-pointer items-center gap-1 text-base font-normal text-zinc-600 transition-colors hover:text-zinc-800 dark:text-zinc-500 dark:hover:text-zinc-300'
 
-  useEffect(() => {
-    setTimeout(() => {
-      setText('Copy')
-    }, 2000)
-  }, [text])
+function BackButton() {
+  const router = useRouter()
 
   return (
     <button
       onClick={() => {
-        setText('Copied')
+        // Prefer real back-navigation (keeps user context), but fall back to home.
+        if (typeof window !== 'undefined' && window.history.length > 1) {
+          router.back()
+          return
+        }
+
+        router.push('/')
+      }}
+      className={TOOLBAR_BUTTON_CLASSNAME}
+      type="button"
+      aria-label="Go back"
+    >
+      <ArrowLeftIcon className="h-4 w-4" />
+      <span>Back</span>
+    </button>
+  )
+}
+
+function CopyButton() {
+  const [copied, setCopied] = useState(false)
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : ''
+
+  useEffect(() => {
+    if (!copied) return
+    setTimeout(() => {
+      setCopied(false)
+    }, 2000)
+  }, [copied])
+
+  return (
+    <button
+      onClick={() => {
+        setCopied(true)
         navigator.clipboard.writeText(currentUrl)
       }}
-      className="font-base flex items-center gap-1 text-center text-sm text-zinc-500 transition-colors dark:text-zinc-400"
+      className={TOOLBAR_BUTTON_CLASSNAME}
       type="button"
+      aria-label="Copy URL"
     >
-      <TextMorph>{text}</TextMorph>
-      <span>URL</span>
+      <span className="sr-only">{copied ? 'Copied' : 'Copy URL'}</span>
+      {copied ? (
+        <CheckIcon className="h-5 w-5" />
+      ) : (
+        <CopyIcon className="h-5 w-5" />
+      )}
     </button>
   )
 }
@@ -43,10 +78,11 @@ export default function LayoutBlogPost({
         }}
       />
 
-      <div className="absolute right-4 top-24">
+      <div className="mt-12 mb-10 flex items-center justify-between">
+        <BackButton />
         <CopyButton />
       </div>
-      <main className="prose prose-gray mt-24 pb-20 prose-h4:prose-base dark:prose-invert prose-h1:text-xl prose-h1:font-medium prose-h2:mt-12 prose-h2:scroll-m-20 prose-h2:text-lg prose-h2:font-medium prose-h3:text-base prose-h3:font-medium prose-h4:font-medium prose-h5:text-base prose-h5:font-medium prose-h6:text-base prose-h6:font-medium prose-strong:font-medium">
+      <main className="prose prose-gray pb-20 prose-h4:prose-base dark:prose-invert prose-h1:text-xl prose-h1:font-medium prose-h2:mt-12 prose-h2:scroll-m-20 prose-h2:text-lg prose-h2:font-medium prose-h3:text-base prose-h3:font-medium prose-h4:font-medium prose-h5:text-base prose-h5:font-medium prose-h6:text-base prose-h6:font-medium prose-strong:font-medium">
         {children}
       </main>
     </>
