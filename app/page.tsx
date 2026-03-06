@@ -195,16 +195,9 @@ export default function Personal() {
                 data-id={service.id}
               >
                 <div className="relative z-10 flex w-full flex-col space-y-1">
-                  <div className="flex w-full flex-col gap-2 sm:flex-row sm:justify-between">
-                    <h4 className="text-sm font-normal text-zinc-900 dark:text-zinc-100">
-                      {service.name}
-                    </h4>
-                    {service.price && (
-                      <p className="text-sm font-medium text-zinc-600 dark:text-zinc-400 sm:text-right">
-                        {service.price}
-                      </p>
-                    )}
-                  </div>
+                  <h4 className="text-sm font-normal text-zinc-900 dark:text-zinc-100">
+                    {service.name}
+                  </h4>
                   <p className="text-sm text-zinc-500 dark:text-zinc-400">
                     {service.description}
                   </p>
