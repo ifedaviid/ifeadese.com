@@ -1,0 +1,161 @@
+export const metadata = {
+  title: 'Galentines Global: Building a Modern Event Website',
+  description:
+    'A case study on designing and developing Galentines Global, a CMS-driven event website for an annual Christian women\'s conference featuring RSVP functionality, event countdown, and dynamic content management.',
+  alternates: {
+    canonical: '/blog/loctineer-case-study',
+  },
+};
+
+# Galentines Global: Building a Modern Event Website
+
+Galentines Global is an annual Christian women's conference website that brings together faith, community, and technology. This case study explores the design and development process behind creating a modern, CMS-driven event platform that handles RSVP management, dynamic content, and an engaging user experience.
+
+---
+
+## The Challenge
+
+The goal was to create a comprehensive event website for Galentines Global—an annual conference that empowers women through faith, prayer, worship, and fellowship. Key requirements included:
+
+- **Event Management**: Display event details, countdown timers, and dynamic content
+- **RSVP System**: Collect and manage attendee registrations
+- **Content Flexibility**: Easy content updates without code changes
+- **Performance**: Fast load times for a media-rich experience
+- **Mobile-First Design**: Seamless experience across all devices
+
+---
+
+## Design Approach
+
+### User-Centered Experience
+
+The design focused on creating an inviting, warm atmosphere that reflects the conference's mission of empowerment and community. Key design principles:
+
+- **Visual Storytelling**: Hero images and carousels showcasing the community and event atmosphere
+- **Clear Information Hierarchy**: Easy navigation to event details, RSVP, and team information
+- **Accessibility**: Ensuring the site is usable and welcoming to all visitors
+- **Brand Consistency**: Cohesive visual identity with custom logos and imagery
+
+### Visual Identity
+
+The design system emphasized:
+
+- Warm, welcoming color palette
+- Custom typography for readability
+- Image-driven hero sections
+- Smooth transitions and interactions
+- Material-UI components for consistency
+
+---
+
+## Technical Implementation
+
+### Architecture
+
+Built with modern web technologies:
+
+- **Next.js 15**: Server-side rendering and optimal performance
+- **TypeScript**: Type safety throughout the application
+- **Material-UI (MUI)**: Component library for consistent UI elements
+- **SASS/SCSS**: Modular styling approach
+- **CMS-Driven Content**: TypeScript-based content management system
+
+### Key Features
+
+1. **CMS System**
+   - Centralized content management in `cms.ts`
+   - Easy updates to event details, dates, and content
+   - Type-safe content structure
+
+2. **RSVP Functionality**
+   - Form submission handling
+   - Google Sheets integration for data collection
+   - Event countdown component
+   - Registration status management
+
+3. **Dynamic Content**
+   - Image carousels for event highlights
+   - Team member showcases
+   - Event countdown timers
+   - Responsive image galleries
+
+4. **Performance Optimizations**
+   - Next.js Image optimization
+   - Lazy loading for carousels
+   - Efficient state management
+   - Preloading critical images
+
+---
+
+## Development Process
+
+### Phase 1: Content Structure
+
+Started by designing a flexible CMS structure that allows non-technical users to update content easily. The `cms.ts` file centralizes all content, making updates straightforward.
+
+### Phase 2: Component Architecture
+
+Built reusable components:
+- `TitleHero`: Consistent hero sections across pages
+- `CardCarousel`: Image carousels with navigation
+- `EventCountdown`: Dynamic countdown timers
+- `RSVPForm`: Form handling with validation
+
+### Phase 3: Integration
+
+Integrated third-party services:
+- Google Sheets API for RSVP data
+- Formspree for form submissions
+- Vercel Analytics for insights
+
+### Phase 4: Optimization
+
+Focused on performance and user experience:
+- Image optimization and lazy loading
+- Mobile responsiveness
+- Accessibility improvements
+- SEO optimization
+
+---
+
+## Results
+
+The platform successfully delivers:
+
+- **Easy Content Management**: Non-technical users can update event information
+- **Smooth User Experience**: Fast load times and intuitive navigation
+- **Effective RSVP Collection**: Streamlined registration process
+- **Mobile-First Design**: Seamless experience on all devices
+- **Scalable Architecture**: Foundation ready for future events
+
+---
+
+## Key Learnings
+
+1. **CMS Design Matters**: A well-structured CMS saves time and enables content updates without developer intervention
+2. **Component Reusability**: Building reusable components accelerated development and ensured consistency
+3. **Performance is Critical**: Optimizing images and implementing lazy loading significantly improved user experience
+4. **Type Safety Helps**: TypeScript caught errors early and made refactoring safer
+
+---
+
+## Technologies Used
+
+- Next.js 15
+- React 18
+- TypeScript
+- Material-UI (MUI)
+- SASS/SCSS
+- Google Sheets API
+- Formspree
+- Vercel (Deployment)
+
+---
+
+> "Building Galentines Global reinforced the importance of creating systems that are both powerful for developers and accessible for content creators." — The balance between technical excellence and user-friendly content management was key to the project's success.
+
+---
+
+### Reflection
+
+This project highlighted how modern web technologies can create beautiful, functional event websites that serve both technical and non-technical users. By focusing on a flexible CMS structure and reusable components, we built a platform that's both maintainable and scalable for future events.
