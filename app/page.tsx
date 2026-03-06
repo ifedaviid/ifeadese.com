@@ -167,7 +167,7 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            All things creative media & digital design. Bridging gaps between design and engineering.
+            I make websites and graphic designs. Exploring all things creative media and digital design.
           </p>
         </div>
       </motion.section>

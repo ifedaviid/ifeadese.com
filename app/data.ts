@@ -33,7 +33,7 @@ export const SERVICES: Service[] = [
   {
     name: 'Initial Consultation',
     description:
-      'Book a call. 20 minutes. We\'ll discuss your project. No obligation.',
+      'Book a call. 20 minutes. We\'ll discuss your project. Free. No obligation.',
     id: 'service1',
   },
   {
