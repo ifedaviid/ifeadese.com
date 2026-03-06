@@ -1,5 +1,6 @@
 type Service = {
   name: string
+  price?: string
   description: string
   link?: string
   video?: string
@@ -30,15 +31,25 @@ type SocialLink = {
 
 export const SERVICES: Service[] = [
   {
-    name: 'Graphic Design',
+    name: 'Initial Consultation',
+    price: 'Free',
     description:
-      'Creating visual identities, branding, and print materials that communicate your message effectively.',
+      'Book a call. We\'ll discuss your project. No obligation.',
     id: 'service1',
   },
   {
-    name: 'Web Design',
-    description: 'Designing beautiful, user-friendly websites and digital experiences that engage and convert.',
+    name: 'Landing Page Design & Development',
+    price: '$500',
+    description:
+      'One page. With hosting setup and a basic logo if needed. 5–7 days.',
     id: 'service2',
+  },
+  {
+    name: 'Website Design & Development',
+    price: '$1000',
+    description:
+      '3–5 pages. With basic branding elements as needed. 10–14 days.',
+    id: 'service3',
   },
 ]
 
