@@ -176,7 +176,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-3 text-lg font-medium">What I Do</h3>
+        <h3 className="mb-3 text-lg font-medium">Services</h3>
         <div className="flex flex-col space-y-0">
           <AnimatedBackground
             enableHover
@@ -195,7 +195,7 @@ export default function Personal() {
               >
                 <div className="relative z-10 flex w-full flex-col space-y-1">
                   <div className="flex w-full flex-col gap-2 sm:flex-row sm:justify-between">
-                    <h4 className="font-normal text-zinc-900 dark:text-zinc-100">
+                    <h4 className="text-sm font-normal text-zinc-900 dark:text-zinc-100">
                       {service.name}
                     </h4>
                     {service.price && (
@@ -218,7 +218,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Work Experience</h3>
+        <h3 className="mb-5 text-lg font-medium">Work</h3>
         <div className="flex flex-col space-y-2">
           {WORK_EXPERIENCE.map((job) => (
             <a
@@ -235,14 +235,14 @@ export default function Personal() {
               <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
                 <div className="relative flex w-full flex-col gap-2 sm:flex-row sm:justify-between">
                   <div>
-                    <h4 className="font-normal dark:text-zinc-100">
+                    <h4 className="text-sm font-normal dark:text-zinc-100">
                       {job.title}
                     </h4>
-                    <p className="text-zinc-500 dark:text-zinc-400">
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400">
                       {job.company}
                     </p>
                   </div>
-                  <p className="text-zinc-600 dark:text-zinc-400 sm:text-right">
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 sm:text-right">
                     {job.start} - {job.end}
                   </p>
                 </div>
@@ -275,10 +275,10 @@ export default function Personal() {
                 data-id={post.uid}
               >
                 <div className="flex flex-col space-y-1">
-                  <h4 className="font-normal dark:text-zinc-100">
+                  <h4 className="text-sm font-normal dark:text-zinc-100">
                     {post.title}
                   </h4>
-                  <p className="text-zinc-500 dark:text-zinc-400">
+                  <p className="text-sm text-zinc-500 dark:text-zinc-400">
                     {post.description}
                   </p>
                 </div>

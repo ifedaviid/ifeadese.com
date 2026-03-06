@@ -18,6 +18,10 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+
+  body {
+    font-size: 0.875rem; /* 14px - Tailwind's text-sm */
+  }
 }
 
 :root {

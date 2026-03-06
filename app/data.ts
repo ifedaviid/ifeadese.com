@@ -32,23 +32,20 @@ type SocialLink = {
 export const SERVICES: Service[] = [
   {
     name: 'Initial Consultation',
-    price: 'Free',
     description:
-      'Book a call. We\'ll discuss your project. No obligation.',
+      'Book a call. 20 minutes. We\'ll discuss your project. No obligation.',
     id: 'service1',
   },
   {
-    name: 'Landing Page Design & Development',
-    price: '$500',
+    name: 'Single Page Web Design & Development',
     description:
-      'One page. With hosting setup and a basic logo if needed. 5–7 days.',
+      'With hosting setup and a basic logo if needed. Starting at $300. Within 5–7 days.',
     id: 'service2',
   },
   {
-    name: 'Website Design & Development',
-    price: '$1000',
+    name: 'Multi-Page Web Design & Development',
     description:
-      '3–5 pages. With basic branding elements as needed. 10–14 days.',
+      'With basic branding elements as needed. Starting at $1000. Within 10–14 days.',
     id: 'service3',
   },
 ]
