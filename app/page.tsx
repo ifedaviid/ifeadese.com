@@ -226,7 +226,7 @@ export default function Personal() {
                 size={64}
               />
               <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
-                <div className="relative flex w-full flex-row justify-between">
+                <div className="relative flex w-full flex-col gap-2 sm:flex-row sm:justify-between">
                   <div>
                     <h4 className="font-normal dark:text-zinc-100">
                       {job.title}
@@ -235,7 +235,7 @@ export default function Personal() {
                       {job.company}
                     </p>
                   </div>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <p className="text-zinc-600 dark:text-zinc-400 sm:text-right">
                     {job.start} - {job.end}
                   </p>
                 </div>
