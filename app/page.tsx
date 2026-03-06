@@ -188,9 +188,10 @@ export default function Personal() {
             }}
           >
             {SERVICES.map((service) => (
-              <div
+              <Link
                 key={service.id}
                 className="-mx-3 block cursor-pointer rounded-xl px-3 py-3"
+                href={service.link || '#'}
                 data-id={service.id}
               >
                 <div className="relative z-10 flex w-full flex-col space-y-1">
@@ -208,7 +209,7 @@ export default function Personal() {
                     {service.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </AnimatedBackground>
         </div>
