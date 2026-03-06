@@ -19,7 +19,7 @@ export function Header() {
           className="text-sm text-zinc-600 dark:text-zinc-500 sm:text-base"
           delay={0.5}
         >
-          Digital Designer
+          Designer & Engineer
         </TextEffect>
       </div>
     </header>

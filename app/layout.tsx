@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     canonical: '/'
   },
   title: {
-    default: 'Ife Adese - Digital Designer',
+    default: 'Ife Adese - Designer & Engineer',
     template: '%s | Ife Adese'
   },
-  description: "I'm an engineer tinkering with all things creative media & digital design. Bridging the gap between design and development.",
+  description: "I make websites and graphic designs. Exploring all things creative media and digital design.",
 };
 
 const geist = Geist({
