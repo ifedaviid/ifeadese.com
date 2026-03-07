@@ -8,7 +8,7 @@ export function Header() {
       <div>
         <Link
           href="/"
-          className="text-lg font-medium text-black dark:text-white sm:text-xl"
+          className="text-lg font-medium text-black dark:text-white"
         >
           Ife Adese
         </Link>
@@ -16,7 +16,7 @@ export function Header() {
           as="p"
           preset="fade"
           per="char"
-          className="text-sm text-zinc-600 dark:text-zinc-500 sm:text-base"
+          className="text-sm text-zinc-600 dark:text-zinc-500"
           delay={0.5}
         >
           Designer & Engineer

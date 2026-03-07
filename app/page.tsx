@@ -12,7 +12,6 @@ import {
 } from '@/components/ui/morphing-dialog'
 import Link from 'next/link'
 import Image from 'next/image'
-import { AnimatedBackground } from '@/components/ui/animated-background'
 import {
   SERVICES,
   WORK_EXPERIENCE,
@@ -167,7 +166,7 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            I make websites and graphic designs. Exploring all things creative media and digital design.
+          I make websites and graphic designs. Exploring all things creative media and digital design.
           </p>
         </div>
       </motion.section>
@@ -177,24 +176,19 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <h3 className="mb-3 text-lg font-medium">Services</h3>
-        <div className="flex flex-col space-y-0">
-          <AnimatedBackground
-            enableHover
-            className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-900/80"
-            transition={{
-              type: 'spring',
-              bounce: 0,
-              duration: 0.2,
-            }}
-          >
-            {SERVICES.map((service) => (
-              <Link
-                key={service.id}
-                className="-mx-3 block cursor-pointer rounded-xl px-3 py-3"
-                href={service.link || '#'}
-                data-id={service.id}
-              >
-                <div className="relative z-10 flex w-full flex-col space-y-1">
+        <div className="flex flex-col space-y-2">
+          {SERVICES.map((service) => (
+            <Link
+              key={service.id}
+              className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30"
+              href={service.link || '#'}
+            >
+              <Spotlight
+                className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
+                size={64}
+              />
+              <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
+                <div className="relative flex w-full flex-col space-y-1">
                   <h4 className="text-sm font-normal text-zinc-900 dark:text-zinc-100">
                     {service.name}
                   </h4>
@@ -202,9 +196,9 @@ export default function Personal() {
                     {service.description}
                   </p>
                 </div>
-              </Link>
-            ))}
-          </AnimatedBackground>
+              </div>
+            </Link>
+          ))}
         </div>
       </motion.section>
 
@@ -251,24 +245,19 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <h3 className="mb-3 text-lg font-medium">Projects</h3>
-        <div className="flex flex-col space-y-0">
-          <AnimatedBackground
-            enableHover
-            className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-900/80"
-            transition={{
-              type: 'spring',
-              bounce: 0,
-              duration: 0.2,
-            }}
-          >
-            {BLOG_POSTS.map((post) => (
-              <Link
-                key={post.uid}
-                className="-mx-3 rounded-xl px-3 py-3"
-                href={post.link}
-                data-id={post.uid}
-              >
-                <div className="flex flex-col space-y-1">
+        <div className="flex flex-col space-y-2">
+          {BLOG_POSTS.map((post) => (
+            <Link
+              key={post.uid}
+              className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30"
+              href={post.link}
+            >
+              <Spotlight
+                className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
+                size={64}
+              />
+              <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
+                <div className="relative flex w-full flex-col space-y-1">
                   <h4 className="text-sm font-normal dark:text-zinc-100">
                     {post.title}
                   </h4>
@@ -276,9 +265,9 @@ export default function Personal() {
                     {post.description}
                   </p>
                 </div>
-              </Link>
-            ))}
-          </AnimatedBackground>
+              </div>
+            </Link>
+          ))}
         </div>
       </motion.section>
 
