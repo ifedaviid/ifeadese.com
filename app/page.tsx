@@ -190,7 +190,7 @@ function ServicesSection() {
 export default function Personal() {
   return (
     <motion.main
-      className="space-y-24"
+      className="space-y-12"
       variants={VARIANTS_CONTAINER}
       initial="hidden"
       animate="visible"
@@ -203,6 +203,16 @@ export default function Personal() {
           <p className="text-zinc-600 dark:text-zinc-400">
           I make websites and graphic designs. Exploring all things creative media and digital design.
           </p>
+          <div className="mt-6">
+            <Image
+              src="/author.jpeg"
+              alt="Ife Adese"
+              width={1200}
+              height={800}
+              objectFit="fill"
+              className="w-full rounded-2xl grayscale object-cover"
+            />
+          </div>
         </div>
       </motion.section>
 
