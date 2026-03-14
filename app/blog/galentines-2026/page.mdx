@@ -1,0 +1,63 @@
+export const metadata = {
+  title: 'Galentines 2026: The Love of God Conference',
+  description:
+    'A case study on designing and developing a CMS-driven event website for an annual Christian women\'s conference.',
+  alternates: {
+    canonical: '/blog/galentines-2026',
+  },
+};
+
+# Galentines 2026: The Love of God Conference
+
+Designing and building an event website for an annual Christian women's conference.
+
+---
+
+## The Project
+
+Galentines Global is an annual conference celebrating faith, sisterhood, and community. For the 2026 edition—themed "The Love of God"—the organizers needed a site that could handle registrations, showcase speakers, and evolve as plans came together.
+
+---
+
+## Design & Aesthetics
+
+The visual design centers on warmth and celebration:
+
+- **Animated hero text** with a rotating image slideshow showcasing moments from past conferences
+- **Gradient logo** and cohesive color palette reflecting the conference's feminine, faith-centered brand
+- **Scripture verse** integrated into the hero—grounding the experience in purpose
+- **Image carousel** highlighting community moments: worship, fellowship, joy
+- **Speaker grid** with graceful mobile carousel for smaller screens
+
+Typography and spacing create breathing room. The layout feels inviting before attendees even arrive.
+
+---
+
+## Functionality
+
+Built with Next.js and deployed on Vercel:
+
+- **RSVP system** with Formspree integration—attendees register, receive confirmation emails, and the organizer gets instant notifications
+- **Event countdown** displaying days until the conference
+- **Live stream button** linking directly to YouTube for remote attendees
+- **SEO structured data** (Schema.org Event markup) so the conference appears correctly in Google search results
+- **Volunteer & partnership pages** with dedicated forms for community involvement
+
+---
+
+## What Made It Easier for the Client
+
+All content lives in a single `cms.ts` file—event details, page copy, images, speaker info. When the founder needs to:
+
+- **Update the event date**: One line change
+- **Swap hero images**: Drop new files, update paths
+- **Edit speaker bios**: Modify the ministers array
+- **Adjust page copy**: Update the relevant section
+
+No database. No admin dashboard to learn. Just clear, organized data in one place.
+
+---
+
+## Results
+
+The site launched smoothly and served as the central hub for conference communications. Updates happened quickly—no waiting on developer availability. The RSVP flow captured registrations without friction.
