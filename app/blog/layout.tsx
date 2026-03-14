@@ -22,12 +22,11 @@ function BackButton() {
 
         router.push('/')
       }}
-      className={TOOLBAR_BUTTON_CLASSNAME}
+      className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-zinc-100 text-zinc-600 transition-colors hover:bg-zinc-200 hover:text-zinc-800 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-zinc-200"
       type="button"
       aria-label="Go back"
     >
       <ArrowLeftIcon className="h-4 w-4" />
-      <span>Back</span>
     </button>
   )
 }
