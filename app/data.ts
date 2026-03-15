@@ -86,7 +86,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     title: 'Galentines 2026: The Love of God Conference',
     description:
-      'A case study on designing and developing a CMS-driven event website for an annual Christian women\'s conference.',
+      'A website for an annual Christian women\'s conference in Ottawa.',
     link: '/blog/galentines-2026',
     uid: 'blog-2',
   },
