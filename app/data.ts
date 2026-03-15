@@ -87,7 +87,7 @@ export const PROJECTS: Project[] = [
   {
     title: 'Designing an App to Help Churches Engage with Newcomers',
     description:
-      'A case study on creating a guest engagement system to help churches welcome and connect with first-time visitors.',
+      'A mobile app design to help churches manage and follow up with newcomers.',
     link: '/projects/church-guest-engagement',
     uid: 'project-1',
   }
