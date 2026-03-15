@@ -85,10 +85,10 @@ export const PROJECTS: Project[] = [
     uid: 'project-2',
   },
   {
-    title: 'Why Visual Appeal is Essential in All Things Design',
+    title: 'Designing an App to Help Churches Engage with Newcomers',
     description:
-      'Exploring why visual appeal matters beyond aesthetics—it\'s fundamental to user experience, communication, and the success of any design.',
-    link: '/projects/visual-appeal-essential-design',
+      'A case study on creating a guest engagement system to help churches welcome and connect with first-time visitors.',
+    link: '/projects/church-guest-engagement',
     uid: 'project-1',
   }
 ]

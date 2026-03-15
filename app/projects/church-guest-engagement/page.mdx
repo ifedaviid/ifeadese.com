@@ -1,0 +1,59 @@
+export const metadata = {
+  title: 'Designing an App to Help Churches Engage with Newcomers',
+  description:
+    'A case study on creating a guest engagement system to help churches welcome and connect with first-time visitors.',
+  alternates: {
+    canonical: '/projects/church-guest-engagement',
+  },
+};
+
+# Designing an App to Help Churches Engage with Newcomers
+
+This project stems from an initiative at my church to help newcomers integrate seamlessly into our community. Every Sunday, we welcome new visitors and follow a process to connect with them and encourage their return.
+
+To support our church's growth, the Guest Services team gives out Connect Cards to newcomers. These cards collect essential contact details, allowing us to follow up during the week and build meaningful relationships.
+
+The purpose of following up is to understand their experience, make them feel welcome, and encourage a commitment to continue their worship with us.
+
+## Research & Problem
+
+Currently, this process runs through Notion, which is functional, but not scalable. Through conversations with the Admin and Hosting teams, I uncovered three key friction points:
+
+- **Tedious Data Entry** – Admins manually input guest details from Connect Cards into Notion, making the process slow and error-prone.
+- **No Periodic Reminders** – Hosts get a single Notion notification when assigned a guest but no reminders, creating potential for missed connections.
+- **No Progress Tracking** – Admins must check specific Notion pages to track engagement progress between hosts and guests.
+
+## Objective & Plan
+
+To address the challenges identified in research, the design needs to:
+
+- **Increase Productivity** – Reduce manual effort for Admins and provide timely reminders for Hosts.
+- **Encourage Structure** – Give Hosts easier access to resources for guest engagement, enabling a consistent yet personalized approach.
+- **Provide Visibility** – Allow Admins to track team progress and guest follow-ups in real time.
+
+## Design Requirements
+
+The app should serve two primary user roles:
+
+- **Admins** – Manage guest-host interactions and oversee follow-ups.
+- **Hosts** – Engage with assigned guests and track their progress.
+
+### Admins should be able to:
+
+- Manage guest profiles – Create, view, search, edit, remove.
+- Manage host profiles – Invite, view, search, remove.
+- Assign a host to a guest profile.
+- Track engagement through visual reports.
+
+### Hosts should be able to:
+
+- View assigned guests in a dedicated list.
+- Access helpful resources for engaging with guests.
+
+### Both users should be able to:
+
+- Receive relevant notifications and reminders.
+- Report progress on guest interactions.
+- Manage their account (sign up, login, profile updates, etc).
+
+<iframe style={{ border: '1px solid rgba(0, 0, 0, 0.1)', borderRadius: '12px', width: '100%', height: '450px' }} src="https://embed.figma.com/design/ebrlQ87qjf6Yct4SGC9f9F/Guest-Connect-App?node-id=265-1123&embed-host=share" allowFullScreen></iframe>
