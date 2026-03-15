@@ -16,7 +16,7 @@ type WorkExperience = {
   id: string
 }
 
-type BlogPost = {
+type Project = {
   title: string
   description: string
   link: string
@@ -71,25 +71,26 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   },
 ]
 
-// NOTE: Keep title and description in sync with the metadata export in each blog post's MDX file
-// When updating a blog post, update both:
-// 1. The metadata export in app/blog/[slug]/page.mdx
-// 2. The entry in BLOG_POSTS below
-export const BLOG_POSTS: BlogPost[] = [
-  {
-    title: 'Why Visual Appeal is Essential in All Things Design',
-    description:
-      'Exploring why visual appeal matters beyond aesthetics—it\'s fundamental to user experience, communication, and the success of any design.',
-    link: '/blog/visual-appeal-essential-design',
-    uid: 'blog-1',
-  },
+// NOTE: Keep title and description in sync with the metadata export in each project's MDX file
+// When updating a project, update both:
+// 1. The metadata export in app/projects/[slug]/page.mdx
+// 2. The entry in PROJECTS below
+export const PROJECTS: Project[] = [
+
   {
     title: 'Galentines 2026: The Love of God Conference',
     description:
       'A website for an annual Christian women\'s conference in Ottawa.',
-    link: '/blog/galentines-2026',
-    uid: 'blog-2',
+    link: '/projects/galentines-2026',
+    uid: 'project-2',
   },
+  {
+    title: 'Why Visual Appeal is Essential in All Things Design',
+    description:
+      'Exploring why visual appeal matters beyond aesthetics—it\'s fundamental to user experience, communication, and the success of any design.',
+    link: '/projects/visual-appeal-essential-design',
+    uid: 'project-1',
+  }
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [

@@ -15,7 +15,7 @@ import Image from 'next/image'
 import {
   SERVICES,
   WORK_EXPERIENCE,
-  BLOG_POSTS,
+  PROJECTS,
   EMAIL,
   SOCIAL_LINKS,
 } from './data'
@@ -262,11 +262,11 @@ export default function Personal() {
       >
         <h3 className="mb-3 text-lg font-medium">Projects</h3>
         <div className="flex flex-col space-y-2">
-          {BLOG_POSTS.map((post) => (
+          {PROJECTS.map((project) => (
             <Link
-              key={post.uid}
+              key={project.uid}
               className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30"
-              href={post.link}
+              href={project.link}
             >
               <Spotlight
                 className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
@@ -275,10 +275,10 @@ export default function Personal() {
               <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
                 <div className="relative flex w-full flex-col space-y-1">
                   <h4 className="text-sm font-normal dark:text-zinc-100">
-                    {post.title}
+                    {project.title}
                   </h4>
                   <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                    {post.description}
+                    {project.description}
                   </p>
                 </div>
               </div>
