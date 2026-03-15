@@ -9,48 +9,52 @@ export const metadata = {
 
 # Designing an App to Help Churches Engage with Newcomers
 
-This project stems from an initiative at my church to help newcomers integrate seamlessly into our community. Every Sunday, we welcome new visitors and follow a process to connect with them and encourage their return.
+On a weekly basis, my church welcomes new visitors through a simple process. The goal is to make them feel connected and comfortable enough to keep coming.
 
-To support our church's growth, the Guest Services team gives out Connect Cards to newcomers. These cards collect essential contact details, allowing us to follow up during the week and build meaningful relationships.
+On Sundays, the Guest Services team gives out "Connect" cards to newcomers, they're encouraged to fill it with their basic contact info. During the week, a team member follows up with a brief phone call to build a connection and encourage their return.
 
-The purpose of following up is to understand their experience, make them feel welcome, and encourage a commitment to continue their worship with us.
+I started thinking about how a mobile app could help. Not just for my church, but in a way that's useful and applicable to any church. "Kingdom Mindset" kind of thing, ya'know.
 
-<img src="/admin-shot-1.png" alt="Admin dashboard screens showing guest management interface" style={{ borderRadius: '12px', border: '1px solid rgba(0, 0, 0, 0.1)' }} />
+[View Design →](https://www.figma.com/design/ebrlQ87qjf6Yct4SGC9f9F/Guest-Connect-App?node-id=265-1123&t=NUusoeQaRRXb7kWP-1)
 
-## Research & Problem
+## Problem
 
-Currently, this process runs through Notion, which is functional, but not scalable. Through conversations with the Admin and Hosting teams, I uncovered three key friction points:
+Currently, this process is managed using Notion, which is functional, but not scalable. Through conversations with the Admin and Hosting teams, I uncovered a few friction points:
 
 - **Tedious Data Entry** – Admins manually input guest details from Connect Cards into Notion, making the process slow and error-prone.
 - **No Periodic Reminders** – Hosts get a single Notion notification when assigned a guest but no reminders, creating potential for missed connections.
 - **No Progress Tracking** – Admins must check specific Notion pages to track engagement progress between hosts and guests.
 
-## Objective & Plan
+## Plan
 
-To address the challenges identified in research, the design needs to:
+To address the challenges identified, my app design aims to:
 
 - **Increase Productivity** – Reduce manual effort for Admins and provide timely reminders for Hosts.
 - **Encourage Structure** – Give Hosts easier access to resources for guest engagement, enabling a consistent yet personalized approach.
 - **Provide Visibility** – Allow Admins to track team progress and guest follow-ups in real time.
 
-## Design Requirements
-
-The app should serve two primary user roles:
+The app will serve two primary user roles:
 
 - **Admins** – Manage guest-host interactions and oversee follow-ups.
 - **Hosts** – Engage with assigned guests and track their progress.
 
-### Admins should be able to:
+Admins should be able to:
 
 - Manage guest profiles – Create, view, search, edit, remove.
 - Manage host profiles – Invite, view, search, remove.
 - Assign a host to a guest profile.
 - Track engagement through visual reports.
 
-### Hosts should be able to:
+<img src="/admin-shot-1.png" alt="Admin dashboard screens showing guest management interface" style={{ borderRadius: '12px', border: '1px solid rgba(0, 0, 0, 0.1)' }} />
+
+<img src="/admin-assign-host-to-guest.png" alt="Admin login and account management screens" style={{ borderRadius: '12px', border: '1px solid rgba(0, 0, 0, 0.1)' }} />
+
+Hosts should be able to:
 
 - View assigned guests in a dedicated list.
 - Access helpful resources for engaging with guests.
+
+<img src="/host-guest-profile.png" alt="Host dashboard screens showing guest list and interaction guide" style={{ borderRadius: '12px', border: '1px solid rgba(0, 0, 0, 0.1)' }} />
 
 <img src="/host-shot-1.png" alt="Host dashboard screens showing guest list and interaction guide" style={{ borderRadius: '12px', border: '1px solid rgba(0, 0, 0, 0.1)' }} />
 
@@ -60,4 +64,6 @@ The app should serve two primary user roles:
 - Report progress on guest interactions.
 - Manage their account (sign up, login, profile updates, etc).
 
-<iframe style={{ border: '1px solid rgba(0, 0, 0, 0.1)', borderRadius: '12px', width: '100%', height: '450px' }} src="https://embed.figma.com/design/ebrlQ87qjf6Yct4SGC9f9F/Guest-Connect-App?node-id=265-1123&embed-host=share" allowFullScreen></iframe>
+<img src="/admin-login-view.png" alt="Admin login and account management screens" style={{ borderRadius: '12px', border: '1px solid rgba(0, 0, 0, 0.1)' }} />
+
+<img src="/host-login-view.png" alt="Admin login and account management screens" style={{ borderRadius: '12px', border: '1px solid rgba(0, 0, 0, 0.1)' }} />
