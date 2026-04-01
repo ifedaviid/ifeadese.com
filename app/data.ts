@@ -37,18 +37,11 @@ export const SERVICES: Service[] = [
     id: 'service1',
   },
   {
-    name: 'Single Page Web Design & Development',
+    name: 'Web Design & Development',
     description:
-      'With hosting setup and a basic logo if needed. Starting at $300. Within 5–7 days.',
-    link: '/services/single-page-web-design',
+      'With hosting, branding & SEO as needed. Delivered within 1-2 weeks. Starting at $300.',
+    link: '/services/web-design-development',
     id: 'service2',
-  },
-  {
-    name: 'Multi-Page Web Design & Development',
-    description:
-      'With basic branding elements as needed. Starting at $1000. Within 10–14 days.',
-    link: '/services/multi-page-web-design',
-    id: 'service3',
   },
 ]
 
