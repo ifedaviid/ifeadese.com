@@ -30,13 +30,6 @@ type SocialLink = {
 
 export const SERVICES: Service[] = [
   {
-    name: 'Initial Consultation',
-    description:
-      'Schedule a call. We\'ll discuss your project. Free. No obligation. ~20 minutes.',
-    link: '/services/initial-consultation',
-    id: 'service1',
-  },
-  {
     name: 'Web Design & Development',
     description:
       'With hosting, branding & SEO as needed. Delivered within 1-2 weeks. Starting at $300.',
@@ -75,14 +68,14 @@ export const PROJECTS: Project[] = [
     description:
       'A website for an annual Christian women\'s conference in Ottawa.',
     link: '/projects/galentines-2026',
-    uid: 'project-2',
+    uid: 'project-1',
   },
   {
     title: 'Designing an App to Help Churches Engage with Newcomers',
     description:
-      'A mobile app design to help churches manage and follow up with newcomers.',
+      'A mobile app design to help churches engage with newcomers.',
     link: '/projects/church-guest-engagement',
-    uid: 'project-1',
+    uid: 'project-2',
   }
 ]
 

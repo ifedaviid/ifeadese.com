@@ -1,7 +1,17 @@
 'use client'
+import type { Metadata } from 'next'
 import { useEffect, useState } from 'react'
 
-export default function InitialConsultation() {
+export const metadata: Metadata = {
+  title: 'Schedule a Chat',
+  description:
+    "Book a free 20-minute consultation to discuss your project and next steps.",
+  alternates: {
+    canonical: '/services/web-design-development/schedule-chat',
+  },
+}
+
+export default function ScheduleChatPage() {
   const [InlineWidget, setInlineWidget] = useState<React.ComponentType<{
     url: string
     styles?: React.CSSProperties
@@ -15,7 +25,7 @@ export default function InitialConsultation() {
 
   return (
     <article className="prose prose-sm prose-gray dark:prose-invert prose-h1:text-xl prose-h1:font-medium">
-      <h1>Initial Consultation</h1>
+      <h1>Schedule a Chat</h1>
       <p>
         Get started with a free consultation call. This is your opportunity to
         discuss your project, ask questions, and explore how we can work
@@ -40,3 +50,4 @@ export default function InitialConsultation() {
     </article>
   )
 }
+
